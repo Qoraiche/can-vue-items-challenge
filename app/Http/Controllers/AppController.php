@@ -8,6 +8,11 @@ use JavaScript;
 
 class AppController extends Controller
 {
+	/**
+     * Put user global javascript vars to the main app view
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
     public function home()
     {
         JavaScript::put([
@@ -19,3 +24,4 @@ class AppController extends Controller
 
 	}
 }
+

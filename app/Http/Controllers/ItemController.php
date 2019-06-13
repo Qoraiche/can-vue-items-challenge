@@ -12,7 +12,8 @@ class ItemController extends Controller
     /**
      * Prevent guests adding resource using built-in auth middlware
      */
-    public function __construct(){
+    public function __construct() 
+    {
 
         $this->middleware('auth')->except(['listItems']);
     }
@@ -22,7 +23,7 @@ class ItemController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function listItems()
+    public function listItems() 
     {
         $response = Item::orderBy('id')->paginate(25);
 
