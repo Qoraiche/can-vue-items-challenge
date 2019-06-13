@@ -52,6 +52,12 @@ Seed database
     php artisan db:seed
 
 
+#Testing
+
+Run test unit:
+
+    vendor/bin/phpunit tests/Feature/AppTest
+
 # Todo Workflow
 
 1. **Backend**
