@@ -43,6 +43,7 @@ In the `.env`, fill in your database details:
     DB_USERNAME=[YOUR_DB_USERNAME]
     DB_PASSWORD=[YOUR_DB_PASSWORD]
     
+
 Run database migrations
 
     php artisan migrate
@@ -52,11 +53,21 @@ Seed database
     php artisan db:seed
 
 
-#Testing
+# Testing
 
 Run test unit:
 
     vendor/bin/phpunit tests/Feature/AppTest
+
+# Commands
+
+Generate new user:
+
+    php artisan app:user
+
+Update user password:
+
+    php artisan app:user --email=test@example.com --password=newpassword
 
 # Todo Workflow
 
