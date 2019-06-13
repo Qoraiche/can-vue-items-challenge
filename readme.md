@@ -29,6 +29,10 @@ Install the Javascript dependencies using NPM:
 
     npm install
 
+Run all Mix tasks and minify output...
+
+    npm run production
+
 
 In the `.env`, fill in your database details:
 
