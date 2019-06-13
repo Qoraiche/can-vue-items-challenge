@@ -46,3 +46,24 @@ Run database migrations
 Seed database
 
     php artisan db:seed
+
+
+# Todo Workflow
+
+1. **Backend**
+
+   * Create Models
+   * I should be able to add a new user from the command line.
+   * I should be able to change a user password from the command line.
+   * I should be able to seed fake data (10000 items / 100 users) from the command line.
+   
+3. **UI**
+
+   * As a user, I can register by providing simply an email and a password.
+   * As a logged user, I can add items. An item is a title, image and description.
+
+4. **Testing**
+
+   * Write some unit tests
+   
+5. List all items with infinite scroll pagination using a VueJs Component.
