@@ -24,7 +24,7 @@ class ItemController extends Controller
      */
     public function listItems()
     {
-        $reponse = Item::orderBy('id')->paginate(25);
+        $response = Item::orderBy('id')->paginate(25);
 
         return response()->json($response);
     }
