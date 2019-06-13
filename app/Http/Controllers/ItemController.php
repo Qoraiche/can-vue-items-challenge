@@ -38,6 +38,6 @@ class ItemController extends Controller
     public function createItem(StoreItem $item)
     {
         $user = Auth::user();
-        $item = $user->item()->create($item->all());
+        $user->item()->create($item->all());
     }
 }
