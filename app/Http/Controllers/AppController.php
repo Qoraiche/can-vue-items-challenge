@@ -20,7 +20,7 @@ class AppController extends Controller
            'user_data' => Auth::user(),
         ]);
 
-		return view('welcome');
+		return view('app');
 
 	}
 }
